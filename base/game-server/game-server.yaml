@@ -47,23 +47,6 @@ spec:
           requests:
             cpu: 512m
             memory: 512Mi
-      - name: terminator
-        image: 356566070122.dkr.ecr.us-west-2.amazonaws.com/gs-term
-        imagePullPolicy: Always
-        command: ["/start.sh"]
-        env:
-          - name: TTL
-            value: "600"
-          - name: FREQUENCY
-            value: "60"
-          - name: POD_NAME
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.name
-          - name: NAMESPACE
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.namespace
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30
       hostNetwork: true
