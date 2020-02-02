@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+data:
+  cluster.name: gdc2020-demo.us-west-2.eksctl.io
+  logs.region: gdc2020-demo
+  # The below configuration file is in JSON format.
+  # Please ensure you keep it well-formed if you modify it.
+  cluster-info.json: |
+    {
+      "cluster": {
+        "name": "gdc2020-demo.us-west-2.eksctl.io"
+      },
+      "logs": {
+        "region": "gdc2020-demo"
+      }
+    }
+kind: ConfigMap
+metadata:
+  name: cluster-info
+  namespace: amazon-cloudwatch
