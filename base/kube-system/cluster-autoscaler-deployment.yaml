@@ -47,8 +47,10 @@ spec:
             - --stderrthreshold=info
             - --cloud-provider=aws
             - --skip-nodes-with-local-storage=false
-            - --expander=least-waste
-            - --node-group-auto-discovery=asg:tag=k8s.io/cluster-autoscaler/enabled,k8s.io/cluster-autoscaler/gdc2020-demo.us-west-2.eksctl.io
+            - --nodes=2:100:eksctl-gdc2020-demo-nodegroup-gdc2020-demo-NodeGroup-13UQ9ADKYOMTV
+          env:
+            - name: AWS_REGION
+              value: us-west-2
           volumeMounts:
             - name: ssl-certs
               mountPath: /etc/ssl/certs/ca-certificates.crt
