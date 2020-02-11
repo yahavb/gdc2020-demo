@@ -45,8 +45,8 @@ spec:
                 key: game.server.queue.name
         resources:
           requests:
-            cpu: 512m
-            memory: 512Mi
+            cpu: 256m
+            memory: 256Mi
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30
       hostNetwork: true
