@@ -140,16 +140,14 @@ spec:
         # Replace the following URL to change the Git repository used by Flux.
         # HTTP basic auth credentials can be supplied using environment variables:
         # https://$(GIT_AUTHUSER):$(GIT_AUTHKEY)@github.com/user/repository.git
-        - --git-url=git@github.com:yahavb/gdc2020-demo
-        - --git-branch=us-west-2
+        - --git-url=git@github.com:yahavb/gdc2020-demo.git
+        - --git-branch=us-east-1
         # Include this if you want to restrict the manifests considered by flux
         # to those under the following relative paths in the git repository
         # - --git-path=subdir1,subdir2
         - --git-label=flux
         - --git-user=Flux
         - --git-email=birayaha@amazon.com
-        - --git-poll-interval=10s
-        - --sync-interval=10s
 
         # Include these two to enable git commit signing
         # - --git-gpg-key-import=/root/gpg-import
