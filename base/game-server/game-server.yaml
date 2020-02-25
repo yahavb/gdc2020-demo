@@ -48,5 +48,5 @@ spec:
             cpu: 256m
             memory: 256Mi
       schedulerName: default-scheduler
-      terminationGracePeriodSeconds: 30
+      terminationGracePeriodSeconds: 40
       hostNetwork: true
