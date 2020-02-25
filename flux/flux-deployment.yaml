@@ -148,6 +148,9 @@ spec:
         - --git-label=flux
         - --git-user=Flux
         - --git-email=birayaha@amazon.com
+        - --git-poll-interval=10s
+        - --sync-interval=10s
+
 
         # Include these two to enable git commit signing
         # - --git-gpg-key-import=/root/gpg-import
