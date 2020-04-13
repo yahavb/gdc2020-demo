@@ -25,7 +25,7 @@ spec:
       serviceAccountName: gs-terminator
       containers:
       - name: multiplayersample
-        image: 356566070122.dkr.ecr.us-west-2.amazonaws.com/multiplayersample-build:10
+        image: 356566070122.dkr.ecr.us-west-2.amazonaws.com/multiplayersample-build:9
         imagePullPolicy: Always
         command: ["/start.py"]
         env:
